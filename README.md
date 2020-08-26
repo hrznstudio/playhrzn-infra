@@ -38,3 +38,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYYsPuHzo1L29u3zhr4uAOF29HNyMcS8zJmOTDNZC4
 
 The SSH public key provided to you here should be used to provide Flux with write-access to the configuration repo.
 If the configuration repo is hosted on GitHub, this can be added to `Deploy keys` under the repo's `Settings` tab.
+
+Foobar.
