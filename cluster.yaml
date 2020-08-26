@@ -14,7 +14,7 @@ vpc:
     gateway: Disable
 
 managedNodeGroups:
-- name: ng-3
+- name: ng-4
   instanceType: t3.xlarge
   availabilityZones: ["eu-west-2c"]
   minSize: 2
