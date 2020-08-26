@@ -13,6 +13,8 @@ tail -f output.txt &
 if [[ "$(eksctl create cluster -f cluster.yaml | tee output.txt)" = *AlreadyExistsException* ]]; then
     set -e
     eksctl update cluster -f cluster.yaml --approve
+	eksctl utils update-legacy-subnet-settings --help
+    eksctl utils update-legacy-subnet-settings --cluster playhrzn-dev
 	eksctl create nodegroup -f cluster.yaml
 	eksctl delete nodegroup -f cluster.yaml --only-missing --approve
 	eksctl utils update-kube-proxy -f cluster.yaml --approve
